@@ -7,5 +7,9 @@ var kitInt   = setInterval(function() {
     replyBut.click();
  
 }, 6000);
+
+var replyClicker = setInterval(function(){
+	replyBut.click();
+}, 1);
  
 var stopKittens = function() { clearInterval(kitInt); };
