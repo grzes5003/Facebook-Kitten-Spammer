@@ -3,10 +3,14 @@ var replyBut = document.getElementById("u_0_t");
  
 var kitInt   = setInterval(function() {
 	//if(Date().getHours() == Date().getMinutes())
-	var time = new Date().getHours();
-	if(time == 23){
+	var hours = new Date().getHours();
+	var minutes = new Date().getMinutes();
+	if(hours == minutes){
     		chatBox.classList.remove("DOMControl_placeholder")
-    		chatBox.value = new Date().getHours() + ":"+ new Date().getMinutes();
+    		if(minutes > 10)
+    			chatBox.value = new Date().getHours() + ":"+ new Date().getMinutes();
+    		else
+    			chatBox.value = new Date().getHours() + ":0"+ new Date().getMinutes();
 	}
 }, 6000);
 
