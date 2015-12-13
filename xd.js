@@ -1,5 +1,5 @@
 var chatBox  = document.getElementsByName("message_body")[0];
-var replyBut = document.getElementById("u_0_s");
+var replyBut = document.getElementById("u_0_t");
  
 var kitInt   = setInterval(function() {
     chatBox.classList.remove("DOMControl_placeholder")
