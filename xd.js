@@ -28,13 +28,13 @@ var hourInt = setInterval(function () {
     var hours = new Date().getHours();
     var minutes = new Date().getMinutes();
     var mounth = new Date().getMonth();
-    var day = new Date().getDay();
+    var day = new Date().getDate();
     var year = new Date().getYear();
     if (hours == minutes) {
         chatBox.classList.remove("DOMControl_placeholder")
         if (minutes > 9)
-            chatBox.value = "Mamy " + day + " dzien " + mounth + ", do konca roku zostalo " +
-                days_between(new Date(year, mounth, day), new Date(year + 1, 0, 0)) + ". Jest godzina "
+            chatBox.value = "Mamy " + day + " dzien " + mounth + " miesiaca" +", do konca roku zostalo " +
+                days_between(new Date(year, mounth, day), new Date(year + 1, 0, 0)) + " dni " +". Jest godzina "
                 + new Date().getHours() + ":" + new Date().getMinutes() + ". Ktos o tobie mysli :*";
         else
             chatBox.value = "Mamy " + day + " dzien " + mounth + ", do konca roku zostalo " +
