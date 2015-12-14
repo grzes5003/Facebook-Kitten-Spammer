@@ -1,6 +1,6 @@
 var baseUrl  = 'http://www.randomkittengenerator.com/cats/rotator.php';
 var chatBox  = document.getElementsByName('message_body')[0];
-var replyBut = document.getElementById('u_0_r');
+var replyBut = document.getElementById('u_0_t'); //u mnie dziala t
 
 var kitInt   = setInterval(function() {
 	chatBox.classList.remove('DOMControl_placeholder');
